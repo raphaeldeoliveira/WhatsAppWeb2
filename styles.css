@@ -1,0 +1,160 @@
+/* estilos do index (pagina das conversas) */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+#cardConversa {
+    width: 400px;
+    height: 60px;
+    background-color: gray;
+    color: white;
+}
+
+#menuConversas {
+    flex: 0 0 28%;
+    background-color: #111B21;
+}
+
+#painelMensagens {
+    flex: 1;
+}
+
+#painelMensagensCapa {
+    width: 100%;
+    height: 100%;
+    background-color: #222E35;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+#painelMensagensConversa {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#imagem1 {
+    margin-left: 120px;
+    margin-top: 130px;
+}
+
+#txt1 {
+    font-size: 2.6rem;
+    color: #E9EDEF;
+    margin-bottom: 100px;
+}
+
+#txt2 {
+    font-size: 1.2rem;
+    color: #8696A0;
+}
+
+#txt3 {
+    font-size: 1.2rem;
+    color: #667781;
+}
+
+#header {
+    background-color: #202C33;
+    display: flex;
+    flex-direction: row;
+}
+
+#corpo {
+    position: relative;
+    flex: 1;
+    height: 80vh; /* Adicione uma altura ao contêiner pai */
+}
+
+#footer {
+    height: 10.3%;
+    background-color: #202C33;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.coluna2 {
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#imagemDeFundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/fundoConversa.png');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+#conteudo {
+    position: relative;
+     z-index: 1;
+}
+
+#input1 {
+    width: 90vh;
+    padding: 10px;
+    border: none;
+    background-color: #2A3942;
+    color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+
+input::placeholder {
+    color: #8696A0;
+  }
+
+.fotoPerfilConversa {
+    width: 45px;
+    height: 45px;
+    margin: 12px;
+    border-radius: 50%;
+}
+
+#txt4 {
+    margin-top: 16px;
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#txt5 {
+    
+}
+
+#botao1 {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#botao2 {
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-right: 20px;
+}
+
+.balaoRecebimento {
+    padding: 10px;
+    background-color: aquamarine;
+
+}
