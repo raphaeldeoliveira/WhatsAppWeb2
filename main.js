@@ -49,25 +49,29 @@ cardConversa.addEventListener('click', function() {
 const inputTexto = document.getElementById('input1');
 
 function EnviarMensagem() {
+
     const texto = document.getElementById('input1').value;
+    var tamanho = texto.length;
+
+    if (texto.length < 15 && texto.length > 5) {
+
+    }
+
     const novaDiv = document.createElement('div');
-    novaDiv.className = 'balaoRecebimento';
+    novaDiv.className = 'balaoRecebimento1';
 
     const novoSpan = document.createElement('span');
     novoSpan.textContent = texto;
     novaDiv.appendChild(novoSpan);
 
-    const corpo = document.getElementById('conteudo');
+    const conteudo = document.getElementById('conteudo');
 
-    corpo.appendChild(novaDiv);
-
-    alert("foi");
+    conteudo.appendChild(novaDiv);
 }
 
 inputTexto.addEventListener('keydown', function(event) {
-    // Verifica se a tecla pressionada é a tecla Enter (código 13)
+    // se a tecla for ENTER
     if (event.keyCode === 13) {
-      // Chama o método que você deseja executar
       EnviarMensagem();
     }
   });
